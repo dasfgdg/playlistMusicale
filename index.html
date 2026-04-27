@@ -1,12 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Playlist Manager</title>
-        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/style.css" />
     </head>
     <body>
-        <!-- contenuto -->
+        <h1>Playlist Manager</h1>
+
+        <form id="track-form">
+            <input id="title" placeholder="Titolo" required />
+            <input id="artist" placeholder="Artista" required />
+            <input
+                id="duration"
+                type="number"
+                placeholder="Durata (sec)"
+                required
+            />
+            <button type="submit">Aggiungi</button>
+        </form>
+
+        <button id="play-btn">Riproduci (console)</button>
+
+        <ul id="playlist"></ul>
+
+        <p>Durata totale: <span id="total">0:00</span></p>
+
         <script src="src/index.js"></script>
     </body>
 </html>
